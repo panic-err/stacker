@@ -5,7 +5,17 @@
     <title>Hello World!</title>
     <link rel="stylesheet" href="index.css">
   </head>
+
+  <script>
+  function AddLine() {
+    console.log("beep");
+    beepr = document.getElementById("pushButton")
+    
+  };
+  </script>
   <body>
+    <p>Press to add a line</p>
+    <button id="pushButton" onclick="AddLine()" class="pushButton">+</button>
     <h1>💖 Hello World!</h1>
     <p>Welcome to your Electron application.</p>
   </body>
