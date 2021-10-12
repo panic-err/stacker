@@ -15,7 +15,7 @@ func main() {
   }
 
   for i := 0;i < num;i++ {
-    boop := fmt.Sprint("boop")
+    boop := fmt.Sprintln("<button class='pushButton'>+</button>  <br>")
     boops = append(boops, boop)
   }
   file, err := os.Create("boops.html")

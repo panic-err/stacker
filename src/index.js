@@ -16,11 +16,6 @@ const createWindow = () => {
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
-  function AddLine() {
-    console.log("beep");
-    this.loadFile(path.join(__dirname, 'push.html'));
-
-  };
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
