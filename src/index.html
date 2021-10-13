@@ -7,10 +7,24 @@
   </head>
 
   <script>
+  toggle = false;
   function AddLine() {
     console.log("beep");
-    beepr = document.getElementById("pushButton")
-    
+
+    if (toggle == false) {
+      toggle = true;
+    }else {
+      toggle = false;
+    }
+    beepr = document.getElementById("pushButton");
+    if (toggle) {
+      beepr.classList.remove("pushButton");
+      beepr.classList.add("slider");
+    }else {
+      beepr.classList.remove("slider");
+      beepr.classList.add("pushButton");
+    }
+
   };
   </script>
   <body>

@@ -5,5 +5,41 @@ body {
   padding: 2rem;
 }
 .pushButton {
+  transition: all 2s;
   background-color: #3FBF3F;
+  animation-name: slide-across;
+  animation-duration: 2s;
+  margin-left:0%;
+  width: 10%;
+}
+
+.slider {
+  transition: all 2s;
+  background-color: red;
+  animation-name: slide;
+  animation-duration: 2s;
+  margin-left:100%;
+  width: 10%;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 0%;
+    width: 10%;
+  }
+  to {
+    margin-left:100%;
+    width: 10%;
+  }
+}
+
+@keyframes slide-across {
+  from {
+    margin-left: 100%;
+    width: 10%;
+  }
+  to {
+    margin-left:0%;
+    width: 10%;
+  }
 }
